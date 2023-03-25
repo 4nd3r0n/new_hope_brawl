@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkxjshb1nvjr1"]
+
+[ext_resource type="Script" path="res://scripts/main/Controls.gd" id="1_v75sp"]
+[ext_resource type="PackedScene" uid="uid://bwfk5cnlv4tu5" path="res://nodes/ui/exit.tscn" id="2_prxai"]
+
+[node name="Controls" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_v75sp")
+
+[node name="ExitLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 74.0
+offset_bottom = 31.0
+
+[node name="ExitTimer" type="Timer" parent="."]
+
+[node name="Exit" parent="." instance=ExtResource("2_prxai")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 403.0
+offset_top = 284.0
+offset_right = 403.0
+offset_bottom = 284.0
+
+[connection signal="timeout" from="ExitTimer" to="." method="_on_exit_timer_timeout"]
