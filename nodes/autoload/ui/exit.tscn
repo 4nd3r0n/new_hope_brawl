@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://esojdthwpxfj"]
+
+[ext_resource type="Script" path="res://scripts/nodes/autoload/ui/exit.gd" id="1_kciul"]
+
+[node name="Exit" type="Window"]
+size = Vector2i(220, 100)
+script = ExtResource("1_kciul")
+
+[node name="ColorBackground" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ExitCont" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBackground" type="ColorRect" parent="ExitCont"]
+layout_mode = 2
+color = Color(0.133333, 0.133333, 0.133333, 0.784314)
+
+[node name="VCont" type="VBoxContainer" parent="ExitCont"]
+layout_mode = 2
+
+[node name="CuestionLabel" type="Label" parent="ExitCont/VCont"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Do you want exit?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HCont" type="HBoxContainer" parent="ExitCont/VCont"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="YesButton" type="Button" parent="ExitCont/VCont/HCont"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Yes"
+
+[node name="NoButton" type="Button" parent="ExitCont/VCont/HCont"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "No"
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]
+[connection signal="pressed" from="ExitCont/VCont/HCont/YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="pressed" from="ExitCont/VCont/HCont/NoButton" to="." method="_on_no_button_pressed"]

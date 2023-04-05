@@ -1,0 +1,11 @@
+res://nodes/autoload/ui/settings/settings_audio.tscn::0db7d831a0c1f9f30627e32cca3cf1cf::1680625635::res://.godot/exported/133200997/export-188d405ff8b6a19e269e2bbcf4530b2c-settings_audio.scn
+res://nodes/autoload/ui/settings/settings_controls.tscn::536c139391bbb8357d9ecadbfcca7ea8::1680625635::res://.godot/exported/133200997/export-57c53ac96f250071ff006589e8925498-settings_controls.scn
+res://nodes/autoload/ui/settings/settings_debug.tscn::2398aca082316cfcee6190ccbe4a2ead::1680625635::res://.godot/exported/133200997/export-40c7c48a8de5759abae6ad5e3d920f41-settings_debug.scn
+res://nodes/autoload/ui/settings/settings_extras.tscn::eb97e812aa39511028ee2fd1e6f96425::1680625635::res://.godot/exported/133200997/export-af9492b6c16d843f53f2568a853f4677-settings_extras.scn
+res://nodes/autoload/ui/settings/settings_general.tscn::75584e707d5e9c150dd219a64adcf173::1680625635::res://.godot/exported/133200997/export-6a5267835450402e4726c32fd5a08eee-settings_general.scn
+res://nodes/autoload/ui/settings/settings_video.tscn::629768b4efaa9be9a53baeae6755c0ef::1680625635::res://.godot/exported/133200997/export-34c7a5a8180637f83b9858d85900b57c-settings_video.scn
+res://nodes/autoload/ui/exit.tscn::b87f317ef1e7c79c62f4e91d1f88b6bc::1680719384::res://.godot/exported/133200997/export-d55d6bafc90349ea6849047176e43b5a-exit.scn
+res://nodes/autoload/ui/settings.tscn::33ac49fcf4ea37c61231357ecf85a74a::1680719355::res://.godot/exported/133200997/export-b8585e97516c836020dbf476041f20cb-settings.scn
+res://nodes/autoload/ui/ui.tscn::f92d528222a2cc1ef52f5f3a598d9edd::1680719355::res://.godot/exported/133200997/export-c9e327b015fd8cf8eb059e11cf043b85-ui.scn
+res://nodes/init/init.tscn::c3df73fbeb7b881b9b38179f16a28402::1680719355::res://.godot/exported/133200997/export-185d90faad8381fce7cfdd325728c2f9-init.scn
+res://scenes/main/main.tscn::29695c3d3bc0be6a67505f417b3c1c23::1680719391::res://.godot/exported/133200997/export-f39996a6d27a38698d16421ab974097b-main.scn

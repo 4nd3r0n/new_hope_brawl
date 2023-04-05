@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtope1mxpkrdu"]
-
-[ext_resource type="Script" path="res://scripts/root/Root.gd" id="1_mleai"]
-
-[node name="Root" type="Node"]
-script = ExtResource("1_mleai")

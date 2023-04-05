@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://wo5t6durdugo"]
+
+[sub_resource type="GDScript" id="GDScript_eikd5"]
+script/source = "extends Node
+
+var num : float
+
+func _ready():
+	num = round( randf_range( 0, 999 ) * 10 ) / 10
+
+	if num != 666:
+		Ui.changeStatus( \"main\" )
+		get_tree().call_deferred( \"change_scene_to_file\", \"res://scenes/main/main.tscn\" )
+	else:
+		Ui.changeStatus( \"main\" )
+		get_tree().call_deferred( \"change_scene_to_file\", \"res://scenes/main/main.tscn\" )
+
+"
+
+[node name="Init" type="Node"]
+script = SubResource("GDScript_eikd5")
