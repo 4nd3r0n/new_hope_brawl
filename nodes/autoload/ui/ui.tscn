@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dxwiddk2f1afw"]
 
 [ext_resource type="Script" path="res://scripts/nodes/autoload/ui/ui.gd" id="1_gouqk"]
-[ext_resource type="PackedScene" uid="uid://dyf4itkloq3lw" path="res://nodes/autoload/ui/settings.tscn" id="2_idk6j"]
+[ext_resource type="PackedScene" uid="uid://b4qd1et4f0238" path="res://nodes/autoload/ui/settings.tscn" id="2_idk6j"]
 [ext_resource type="PackedScene" uid="uid://esojdthwpxfj" path="res://nodes/autoload/ui/exit.tscn" id="3_06phs"]
 [ext_resource type="Script" path="res://scripts/nodes/autoload/ui/animateWindows.gd" id="4_ghxmj"]
 

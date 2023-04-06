@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyf4itkloq3lw"]
+[gd_scene load_steps=8 format=3 uid="uid://b4qd1et4f0238"]
 
 [ext_resource type="Script" path="res://scripts/nodes/autoload/ui/settings.gd" id="1_xbulm"]
-[ext_resource type="PackedScene" path="res://nodes/autoload/ui/settings/settings_general.tscn" id="2_xoge6"]
+[ext_resource type="PackedScene" uid="uid://d1e80rg8utsxq" path="res://nodes/autoload/ui/settings/settingsGeneral.tscn" id="2_xoge6"]
+[ext_resource type="PackedScene" uid="uid://k7mi0j6d6v6t" path="res://nodes/autoload/ui/settings/settingsVideo.tscn" id="3_1rat4"]
+[ext_resource type="PackedScene" path="res://nodes/autoload/ui/settings/settingsAudio.tscn" id="4_ha8tr"]
+[ext_resource type="PackedScene" path="res://nodes/autoload/ui/settings/settingsControls.tscn" id="5_hepsi"]
+[ext_resource type="PackedScene" path="res://nodes/autoload/ui/settings/settingsExtras.tscn" id="6_k7uab"]
+[ext_resource type="PackedScene" uid="uid://dlq6q7wtkd2iq" path="res://nodes/autoload/ui/settings/settingsDebug.tscn" id="7_wrtf2"]
 
 [node name="Settings" type="Window"]
+title = "Settings - General"
 size = Vector2i(700, 480)
 script = ExtResource("1_xbulm")
 
@@ -19,6 +25,10 @@ color = Color(0, 0, 0, 0.392157)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = -15.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -46,14 +56,20 @@ text = "Video"
 
 [node name="AudioButton" type="Button" parent="MSCont/MSVCont/MSHCont/MSVCont/MSTabVCont"]
 layout_mode = 2
+focus_mode = 0
+disabled = true
 text = "Audio"
 
 [node name="ControsButton" type="Button" parent="MSCont/MSVCont/MSHCont/MSVCont/MSTabVCont"]
 layout_mode = 2
+focus_mode = 0
+disabled = true
 text = "Controls"
 
 [node name="ExtrasButton" type="Button" parent="MSCont/MSVCont/MSHCont/MSVCont/MSTabVCont"]
 layout_mode = 2
+focus_mode = 0
+disabled = true
 text = "Extras"
 
 [node name="DebugButton" type="Button" parent="MSCont/MSVCont/MSHCont/MSVCont/MSTabVCont"]
@@ -78,6 +94,32 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="SettingsGeneral" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("2_xoge6")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsVideo" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("3_1rat4")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsAudio" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("4_ha8tr")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsControls" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("5_hepsi")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsExtras" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("6_k7uab")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsDebug" parent="MSCont/MSVCont/MSHCont/MSTabsHCont" instance=ExtResource("7_wrtf2")]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 

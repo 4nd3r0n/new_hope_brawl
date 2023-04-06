@@ -2,7 +2,4 @@ res://nodes/init/init.tscn
 res://scenes/main/main.tscn
 res://nodes/autoload/ui/ui.tscn
 res://nodes/autoload/ui/settings.tscn
-res://scripts/nodes/autoload/ui/settings.gd
-res://scripts/nodes/autoload/ui/ui.gd
-res://scripts/nodes/autoload/ui/exit.gd
 res://nodes/autoload/ui/exit.tscn

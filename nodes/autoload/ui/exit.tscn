@@ -4,6 +4,8 @@
 
 [node name="Exit" type="Window"]
 size = Vector2i(220, 100)
+unresizable = true
+borderless = true
 script = ExtResource("1_kciul")
 
 [node name="ColorBackground" type="ColorRect" parent="."]
